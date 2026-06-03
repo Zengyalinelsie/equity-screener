@@ -142,7 +142,8 @@ def compute_sector_pe(
             return float((s * w).sum() / w.sum()) if w.sum() > 0 else float(s.median())
         return float(s.median())
 
-    return work.groupby(sector_col, dropna=True).apply(_one_sector).rename("sector_pe")
+    value_cols = [pe_col] + ([weight_col] if weight_col in work.columns else [])
+    return work.groupby(sector_col, dropna=True)[value_cols].apply(_one_sector).rename("sector_pe")
 
 
 # =============================================================
