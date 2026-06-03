@@ -1,0 +1,4 @@
+# 仅本地拉数(Mac + Wind)需要; Streamlit Cloud 不装这些
+# 安装: pip install -r requirements-data.txt
+xlwings>=0.31
+openpyxl>=3.1

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# 日志 / 临时
+logs/
+*.log
+.DS_Store
+~$*
+templates/~$*
+
+# Streamlit 密钥(若用)
+.streamlit/secrets.toml
+
+# 注意: data/wind_history.db 和 templates/*.xlsx 是【要提交】的(云端看板靠 db, 本地拉数靠模板)

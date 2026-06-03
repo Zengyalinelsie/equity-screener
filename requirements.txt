@@ -1,0 +1,5 @@
+# Streamlit Cloud 运行所需(云端只跑看板, 不拉数据)
+streamlit>=1.57
+pandas>=2.2
+plotly>=5.22
+numpy>=1.26
