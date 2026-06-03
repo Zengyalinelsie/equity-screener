@@ -68,6 +68,8 @@ pip install -r requirements.txt -r requirements-data.txt
 3. Deploy。之后每次 `git push` 新的 db,Cloud 自动重新部署。
 
 > db ~30MB,每天提交会让 git 历史变大;在意的话后续可上 [git-lfs](https://git-lfs.com/) 或定期 squash。
+>
+> 刷新后白屏 / 只剩 `Deploy` 按钮的入口文件坑，见 `docs/STREAMLIT_DEPLOYMENT_PITFALLS.md`。
 
 ## 本地预览
 ```bash
